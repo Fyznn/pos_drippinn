@@ -14,6 +14,8 @@ import {
 } from 'chart.js';
 import { Line, Bar } from 'react-chartjs-2';
 
+declare function route(name: string, params?: any, absolute?: boolean): string;
+
 // Registrasi ChartJS
 ChartJS.register(
   CategoryScale,
