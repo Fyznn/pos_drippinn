@@ -11,9 +11,12 @@ class DatabaseSeeder extends Seeder
 {
     public function run()
     {
-        Kasir::create([
-            'username' => 'admin',
-            'password' => Hash::make('password123'),
+
+        Kasir::insert([
+            ['username' => 'Figo', 'password' => Hash::make('figo123'),], 
+            ['username' => 'Yosafat', 'password' => Hash::make('yosafat123'),],
+            ['username' => 'Raihan', 'password' => Hash::make('raihan123'),],
+            ['username' => 'Marcel', 'password' => Hash::make('marcel123'),]
         ]);
 
         Produk::insert([
